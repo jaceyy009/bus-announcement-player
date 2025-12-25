@@ -16,3 +16,12 @@ playButton.addEventListener('click', () => {
     alert("Audio file not found or error playing: " + filename + "\n\n" + err.message);
   });
 });
+
+playButton.addEventListener('click', () => {
+  const filename = `audio/last-bus-today.mp3;
+
+  audioPlayer.src = filename;
+  audioPlayer.play().catch(err => {
+    alert("Audio file not found or error playing: " + filename + "\n\n" + err.message);
+  });
+});
