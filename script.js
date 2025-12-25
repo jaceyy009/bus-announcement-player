@@ -23,10 +23,10 @@ constlastBusButton =
 lastBusButton.addEventListener('click', () => {
   
   // No need to check route - it's a universal message
-  const filename = 'audio/last-bus-today.mp3';
+  const filename = 'audio/lastbus.mp3';
 
   audioPlayer.src = filename;
   audioPlayer.play().catch(err => {
-    alert("Last bus audio file not found: " + filename + "/n/nMake sure 'last-bus-today.mp3' is in the audio/ folder.");
+    alert("Last bus audio file not found: " + filename + "/n/nMake sure 'lastbus.mp3' is in the audio/ folder.");
   });
 });
