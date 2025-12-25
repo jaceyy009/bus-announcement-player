@@ -16,10 +16,3 @@ playButton.addEventListener('click', () => {
     alert("Audio file not found or error playing: " + filename + "\n\n" + err.message);
   });
 });
-
-<script>
-    function playAudio() {
-        var audio = document.getElementById("last-bus-today");
-        audio.play();
-    }
-</script>
