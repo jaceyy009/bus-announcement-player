@@ -17,10 +17,10 @@ playButton.addEventListener('click', () => {
   });
 });
 
-constlastBus = 
+const lastBus = 
   document.getElementById('lastBus');
 
-lastBusButton.addEventListener('click', () => {
+lastBus.addEventListener('click', () => {
   
   // No need to check route - it's a universal message
   const filename = `audio/lastbus.mp3`;
