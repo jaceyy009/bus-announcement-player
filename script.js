@@ -17,7 +17,7 @@ playButton.addEventListener('click', () => {
   });
 });
 
-constlastBusButton = 
+constlastBus = 
   document.getElementById('lastBus');
 
 lastBusButton.addEventListener('click', () => {
