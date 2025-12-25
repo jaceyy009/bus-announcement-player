@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Announcement Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bus Route Announcement Player</h1>
+
+  <label>
+    Route Number:
+    <select id="route">
+      <option value="1">Route 1</option>
+      <option value="7">Route 7</option>
+      <option value="42">Route 42</option>
+      <!-- Add more routes as needed -->
+    </select>
+  </label>
+
+  <label>
+    Type:
+    <select id="type">
+      <option value="arrival">Arrival</option>
+      <option value="boarding">Boarding</option>
+      <option value="departure">Departure</option>
+    </select>
+  </label>
+
+  <label>
+    Stop:
+    <select id="stop">
+      <option value="1">Stop 1</option>
+      <option value="2">Stop 2</option>
+      <option value="3">Stop 3</option>
+      <option value="4">Stop 4</option>
+      <option value="5">Stop 5</option>
+      <option value="6">Stop 6</option>
+      <option value="7">Stop 7</option>
+      <option value="8">Stop 8</option>
+      <option value="A">Stop A</option>
+      <option value="B">Stop B</option>
+      <option value="C">Stop C</option>
+      <option value="D">Stop D</option>
+    </select>
+  </label>
+
+  <button id="play">Play Announcement</button>
+
+  <audio id="player" controls style="display:none;"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
