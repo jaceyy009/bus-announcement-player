@@ -16,3 +16,17 @@ playButton.addEventListener('click', () => {
     alert("Audio file not found or error playing: " + filename + "\n\n" + err.message);
   });
 });
+
+constlastBusButton = 
+  document.getElementById('lastBus');
+
+lastBusButton.addEventListener('click', () => {
+  
+  // No need to check route - it's a universal message
+  const filename = 'audio/last-bus-today.mp3';
+
+  audioPlayer.src = filename;
+  audioPlayer.play().catch(err => {
+    alert("Last bus audio file not found: " + filename + "/n/nMake sure 'last-bus-today.mp3' is in the audio/ folder.");
+  });
+});
