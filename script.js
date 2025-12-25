@@ -19,7 +19,7 @@ playButton.addEventListener('click', () => {
 
 <script>
     function playAudio() {
-        var audio = document.getElementById("last-bus-today.mp3");
+        var audio = document.getElementById("last-bus-today");
         audio.play();
     }
 </script>
